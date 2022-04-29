@@ -7,7 +7,7 @@
 
 // ignore_for_file: UNDEFINED_SHOWN_NAME,UNUSED_SHOWN_NAME
 import 'dart:core' as $core;
-import 'package:protobuf/protobuf.dart' as $pb;
+import 'package:protobuf2/protobuf.dart' as $pb;
 
 class BluetoothState_State extends $pb.ProtobufEnum {
   static const BluetoothState_State UNKNOWN =

@@ -7,11 +7,10 @@
 
 import 'dart:core' as $core;
 
-import 'package:protobuf/protobuf.dart' as $pb;
 
+import 'package:protobuf2/protobuf.dart' as $pb;
 import 'flutterblue.pbenum.dart';
 
-export 'flutterblue.pbenum.dart';
 
 class Int32Value extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i =
@@ -1227,6 +1226,28 @@ class ReadDescriptorResponse extends $pb.GeneratedMessage {
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
   void clearValue() => clearField(2);
+}
+
+
+class WriteCharacteristicRequest_WriteType extends $pb.ProtobufEnum {
+  static const WriteCharacteristicRequest_WriteType WITH_RESPONSE =
+  WriteCharacteristicRequest_WriteType._(0, 'WITH_RESPONSE');
+  static const WriteCharacteristicRequest_WriteType WITHOUT_RESPONSE =
+  WriteCharacteristicRequest_WriteType._(1, 'WITHOUT_RESPONSE');
+
+  static const $core.List<WriteCharacteristicRequest_WriteType> values =
+  <WriteCharacteristicRequest_WriteType>[
+    WITH_RESPONSE,
+    WITHOUT_RESPONSE,
+  ];
+
+  static final $core.Map<$core.int, WriteCharacteristicRequest_WriteType>
+  _byValue = $pb.ProtobufEnum.initByValue(values);
+  static WriteCharacteristicRequest_WriteType valueOf($core.int value) =>
+      _byValue[value];
+
+  const WriteCharacteristicRequest_WriteType._($core.int v, $core.String n)
+      : super(v, n);
 }
 
 class WriteCharacteristicRequest extends $pb.GeneratedMessage {

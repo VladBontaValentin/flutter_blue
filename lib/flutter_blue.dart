@@ -13,7 +13,7 @@ import 'package:meta/meta.dart';
 import 'package:rxdart/rxdart.dart';
 
 import 'gen/flutterblue.pb.dart' as protos;
-
+import 'gen/flutterblue.pbenum.dart';
 part 'src/bluetooth_characteristic.dart';
 part 'src/bluetooth_descriptor.dart';
 part 'src/bluetooth_device.dart';
