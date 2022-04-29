@@ -16,7 +16,7 @@ dependencies:
   protobuf2:
     git:
       url: https://github.com/VladBontaValentin/protobuf
-      ref: NewProto
+      ref: Proto
   rxdart: ^0.24.0
   collection: ^1.14.13
   meta: ^1.2.3
